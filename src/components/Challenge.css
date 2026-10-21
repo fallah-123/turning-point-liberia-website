@@ -1,0 +1,101 @@
+.challenge-section {
+  background: #fff;
+}
+
+.section-heading {
+  max-width: 690px;
+  margin-bottom: 42px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 16px;
+}
+
+.section-heading h2,
+.page-heading h1 {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--heading);
+  font-size: clamp(2.3rem, 4.5vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.14;
+}
+
+.section-heading h2 em {
+  color: var(--gold-dark);
+  font-weight: 500;
+}
+
+.section-heading > p:last-child {
+  max-width: 620px;
+  margin: 17px 0 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.challenge-reveal {
+  height: 100%;
+}
+
+.challenge-card {
+  min-height: 235px;
+}
+
+.card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.card-topline svg {
+  width: 27px;
+  height: 27px;
+  color: var(--navy);
+}
+
+.challenge-card h3 {
+  margin: 0 0 11px;
+  color: var(--navy);
+  font-family: var(--heading);
+  font-size: 1.27rem;
+  font-weight: 600;
+}
+
+.challenge-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.91rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .challenge-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .challenge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-card {
+    min-height: 0;
+  }
+}

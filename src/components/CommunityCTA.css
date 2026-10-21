@@ -1,0 +1,117 @@
+.community-cta-section {
+  padding: 18px 0 74px;
+  background: #fff;
+}
+
+.community-cta {
+  position: relative;
+  display: flex;
+  min-height: 270px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: clamp(32px, 6vw, 68px);
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: #fff;
+}
+
+.community-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.community-copy .eyebrow {
+  color: #f3c965;
+}
+
+.community-copy h2 {
+  max-width: 660px;
+  margin: 0;
+  font-family: var(--heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.community-copy > p:last-child {
+  max-width: 590px;
+  margin: 13px 0 0;
+  color: rgba(255, 255, 255, 0.77);
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+.community-cta > .button {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.cta-decoration {
+  position: absolute;
+  border: 1px solid rgba(217, 162, 27, 0.35);
+  border-radius: 50%;
+}
+
+.cta-decoration-one {
+  top: -145px;
+  right: 16%;
+  width: 330px;
+  height: 330px;
+}
+
+.cta-decoration-two {
+  top: -105px;
+  right: 13%;
+  width: 255px;
+  height: 255px;
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+.button-light {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 19px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.button-light:hover {
+  background: #f6ebcc;
+  transform: translateY(-2px);
+}
+
+.button-light svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 760px) {
+  .community-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .community-cta-section {
+    padding-bottom: 54px;
+  }
+
+  .community-cta {
+    gap: 20px;
+  }
+}
